@@ -1,4 +1,4 @@
-/* Reusable components: buttons, chips, cards, code window */
+/* Reusable components: controls, cards and code window */
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 11px 22px; border-radius: 999px; font: inherit; font-weight: 600; font-size: .95rem;
@@ -6,8 +6,6 @@
   transition: transform .15s, border-color .15s, box-shadow .15s;
 }
 .btn:hover { transform: translateY(-1px); border-color: var(--accent); box-shadow: var(--shadow); text-decoration: none; }
-.btn-primary { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); }
-.btn-primary:hover { box-shadow: 0 8px 24px var(--glow); }
 .btn-lang { padding: 5px 12px; font-size: .85rem; font-weight: 500; }
 
 .eyebrow {
@@ -16,9 +14,6 @@
 }
 .tagline { color: var(--accent); font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 14px; }
 .lead { color: var(--muted); max-width: 520px; margin: 0; }
-
-.stat strong { display: block; font-size: 2rem; line-height: 1.1; letter-spacing: -.03em; }
-.stat span { color: var(--muted); font-size: .88rem; }
 
 /* Code window (decorative) */
 .code-window {
@@ -39,16 +34,6 @@
 .c-key { color: var(--accent); }
 .c-str { color: var(--code-str); }
 .c-com { color: var(--muted); }
-
-/* Filter chips */
-.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
-.chip {
-  padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line);
-  background: var(--card); color: var(--muted); font: inherit; font-size: .86rem; font-weight: 500;
-  cursor: pointer; transition: all .15s;
-}
-.chip:hover { color: var(--fg); border-color: var(--accent); }
-.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); }
 
 /* Project cards */
 .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); }

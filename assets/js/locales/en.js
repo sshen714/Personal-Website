@@ -6,15 +6,16 @@ Site.locales['en'] = {
   'home.title': "Hi, I'm Wei.",
   'home.tagline': 'Personal portfolio',
   'home.intro': 'A collection of programming projects I completed during university.',
-  'home.cta.projects': 'View projects',
-  'home.cta.github': 'GitHub',
   'home.projects': 'Projects',
   'home.projects.label': 'SELECTED WORK',
-  'home.projects.intro': 'From course exercises to complete projects, documenting what I build and learn.',
-  'home.filter.all': 'All',
-  'home.stat.projects': 'projects',
-  'home.stat.tech': 'tech tags',
+  'home.tools': 'Tools & Technologies',
+  'home.tools.label': 'TOOLS & TECHNOLOGIES',
+  'home.tools.frontend': 'Frontend',
+  'home.tools.backend': 'Backend & Data',
+  'home.tools.programming': 'Programming',
+  'home.tools.workflow': 'Development & Deployment',
   'nav.projects': 'Work',
+  'nav.tools': 'Tools',
 
   'footer.copy': '© {year} wei'
 };

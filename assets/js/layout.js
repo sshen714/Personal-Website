@@ -5,7 +5,8 @@ Site.layout = {
   // Add pages here as they are built.
   // (and add the matching 'nav.*' key to each file in locales/).
   nav: [
-    { page: 'projects', href: 'index.html#projects', key: 'nav.projects' }
+    { page: 'projects', href: 'index.html#projects', key: 'nav.projects' },
+    { page: 'tools', href: 'index.html#tools', key: 'nav.tools' }
   ],
 
   render: function () {
