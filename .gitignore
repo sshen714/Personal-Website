@@ -1,0 +1,30 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Secrets and personal files — never commit these
+.env
+.env.*
+*.pem
+*.key
+*.p12
+id_rsa*
+secrets/
+private/
+*.local
+
+# Dependencies and build output (for if a toolchain is added later)
+node_modules/
+dist/
+.cache/
+
+# Logs
+*.log
+
+# Claude Code local settings
+.claude/settings.local.json

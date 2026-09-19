@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Everything is same-origin; block inline scripts, third-party loads and framing of forms/base. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>wei · Portfolio</title>
+<meta name="description" content="wei's personal website and project portfolio.">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+
+<div class="wrap">
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <span class="eyebrow" data-i18n="home.eyebrow"></span>
+        <h1 data-i18n="home.title"></h1>
+        <p class="tagline" data-i18n="home.tagline"></p>
+        <p class="lead" data-i18n="home.intro"></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects" data-i18n="home.cta.projects"></a>
+          <a class="btn" href="https://github.com/sshen714" target="_blank" rel="noopener noreferrer" data-i18n="home.cta.github"></a>
+        </div>
+      </div>
+
+      <!-- Decorative snippet; not real data -->
+      <div class="code-window" aria-hidden="true">
+        <div class="code-bar"><i></i><i></i><i></i></div>
+<pre><span class="c-com">// portfolio.js</span>
+<span class="c-key">const</span> portfolio = {
+  projects: [<span class="c-str">"games"</span>,
+             <span class="c-str">"simulators"</span>,
+             <span class="c-str">"web"</span>],
+  status: <span class="c-str">"keep learning"</span>,
+};</pre>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head">
+        <div>
+          <span class="section-label" data-i18n="home.projects.label"></span>
+          <h2 data-i18n="home.projects"></h2>
+        </div>
+        <p data-i18n="home.projects.intro"></p>
+        <span id="project-count" class="count"></span>
+      </div>
+      <div id="project-filters" class="filters"></div>
+      <div id="project-list" class="grid"></div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+</div>
+
+<script src="assets/js/locales/zh-Hant.js"></script>
+<script src="assets/js/locales/en.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="data/projects.js"></script>
+<script src="assets/js/projects.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* Page frame: container, header, footer, sections */
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
+
+.site-header-bar {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--bg-blur);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.site-header {
+  display: flex; justify-content: space-between; align-items: center;
+  max-width: 1040px; margin: 0 auto; padding: 14px 28px;
+}
+.brand { color: var(--fg); font-weight: 700; font-size: 1.15rem; letter-spacing: -.02em; }
+.brand::before {
+  content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 8px;
+  border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft);
+}
+.site-nav { display: flex; gap: 24px; margin: 0 28px 0 auto; }
+.site-nav a { color: var(--muted); }
+.site-nav a:hover { color: var(--fg); }
+.site-nav a.active { color: var(--fg); font-weight: 600; }
+
+.site-footer {
+  margin-top: 72px; padding: 28px 0 44px;
+  border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem;
+}
+
+main { min-height: 60vh; }
+
+/* Hero */
+.hero {
+  display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center;
+  min-height: 650px; padding: 96px 0 88px;
+}
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.stats { display: flex; gap: 40px; margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line); }
+
+/* Sections */
+.section { padding: 88px 0 0; border-top: 1px solid var(--line); }
+.section-head { display: grid; grid-template-columns: 1fr minmax(220px, 340px) auto; align-items: end; gap: 24px; margin-bottom: 34px; }
+.section-head p { margin: 0; color: var(--muted); text-align: right; }
+.section-head .count { color: var(--muted); font-size: .95rem; }
+
+.section-label { display: block; margin-bottom: 14px; color: var(--accent); font: 600 .72rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .15em; }
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; min-height: auto; gap: 40px; padding: 64px 0 72px; }
+}
+@media (max-width: 520px) {
+  .wrap, .site-header { padding-left: 18px; padding-right: 18px; }
+  .site-nav { display: none; }
+  .section-head { grid-template-columns: 1fr auto; }
+  .section-head p { grid-column: 1 / -1; text-align: left; }
+}
